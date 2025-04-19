@@ -151,7 +151,7 @@ If inference is enabled, you can then run inference on this model by filling out
 
 *Remark: if you created a model that was not public, in the same interface you will see options in which you can grant access to this model to other user(s) by writing their Used ID (numerical value).*
 
-During the current testing phase, the time for inference is limited to 60 seconds. If inference takes longer, you will receive the error: *Inference output: Inference unsuccessful, status code: 504.* In that case, try (re)training/creating your model with fewer features (columns) and/or use a simpler model type ([Go to "Creating a new model"](#Creating-a-new-model)). Reducing the number of samples (rows) should not have a significant impact, but you can experiment with it as well.
+During the current testing phase, the time for inference is limited to 10 minutes. If inference takes longer, you will receive the error: *Inference output: Inference unsuccessful, status code: 504.* In that case, try (re)training/creating your model with fewer features (columns) and/or use a simpler model type ([Go to "Creating a new model"](#Creating-a-new-model)). Reducing the number of samples (rows) should not have a significant impact, but you can experiment with it as well.
 
 <p align="center" width="100%">
     <img src="assets/6.png" width="1280">
