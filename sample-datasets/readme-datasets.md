@@ -1,10 +1,7 @@
 In `salary.csv` there is one feature:
 - `YearsExperience` - years of experience. When creating a new model, it can be `integer` or `float`.
 
-The target value (`Target`) is the expected salary.
-
-
-
+The target value (`Target`) is the expected salary.<br><br>
 
 In `drug200.csv` there are more features. When creating new model, please use as input type:
 - for `Age` -  please use `integer` or `float`
