@@ -145,7 +145,11 @@ To see the details of a model click on the model and the model detail page will 
     <img src="assets/5.png" width="1280">
 </p>
 
-If inference is enabled, you can then run inference on this model by filling out all of the required fields and clicking `RUN INFERENCE`. *Remark: if you created a model that was not public, in the same interface you will see options in which you can grant access to this model to other user(s) by writing their Used ID (numerical value).*
+If inference is enabled, you can then run inference on this model by filling out all of the required fields and clicking `RUN INFERENCE`.
+
+**Here, you can witness the main feature of TruPS: for inference you are using a model, deployed and running in the cloud, that DOES NOT know your plaintext value - in other words, here TruPS performs inference on encrypted data.**
+
+*Remark: if you created a model that was not public, in the same interface you will see options in which you can grant access to this model to other user(s) by writing their Used ID (numerical value).*
 
 During the current testing phase, the time for inference is limited to 60 seconds. If inference takes longer, you will receive the error: *Inference output: Inference unsuccessful, status code: 504.* In that case, try (re)training/creating your model with fewer features (columns) and/or use a simpler model type ([Go to "Creating a new model"](#Creating-a-new-model)). Reducing the number of samples (rows) should not have a significant impact, but you can experiment with it as well.
 
@@ -153,7 +157,7 @@ During the current testing phase, the time for inference is limited to 60 second
     <img src="assets/6.png" width="1280">
 </p>
 
-Finally, if the inference was successful result will be displayed:
+Finally, if the inference was successful, the result will be displayed:
 
 <p align="center" width="100%">
     <img src="assets/7.png" width="1280">
@@ -163,7 +167,7 @@ Finally, if the inference was successful result will be displayed:
 
 In general, due to the 60-second inference time limitation during this testing phase, we recommend using datasets with a maximum of 5 features (columns) and 1,000 samples (rows) when creating your models. Sample datasets are available to help you get started.
 
-In [sample datasets](./sample-datasets) you will find `salary.csv` and `drug200.csv` sample datasets.
+In [sample datasets](./sample-datasets) you will find `salary.csv` and `drug200.csv` sample datasets, and 'readme-datasets.md' if you want to know more about those datasets.
 
 You can download these datasets and create new models with those datasets.
 
