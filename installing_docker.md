@@ -22,9 +22,6 @@
     <img src="assets/installing_docker_4.png" style="width: 40%;">
 </p>
 
-- Now you can [Go to step 2.1.3.](README.md#21-using-docker-image---mandatory-for-windows-and-mac-users-recommended-for-linux-users)
-
-
 
 
 
