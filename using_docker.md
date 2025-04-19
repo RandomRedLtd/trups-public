@@ -70,7 +70,3 @@ docker run -p 8282:8282 trups-bridge
 <p align="center">
   <img src="assets/using_docker_8.png" width="60%">
 </p>
-
-
-- … and you can [Go to "Start working with TruPS"](README.md#3-start-working-with-trups)
-
