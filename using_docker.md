@@ -53,7 +53,7 @@ Remark: If you have chosen e.g. Git Bash instead of Windows Powershell, type in 
 docker load < trups-bridge-image.tar.gz
 ```
 
-- if load was succesfull, loaded image should appear in window:
+- if load was successful, loaded image should appear in window:
 
 <p align="center">
   <img src="assets/using_docker_7.png" width="60%">
@@ -61,11 +61,11 @@ docker load < trups-bridge-image.tar.gz
 
 
 
-- type in command to run the image (valid for Windows Powershell and Git Bash):
+- type in the command to run the image (valid for Windows Powershell and Git Bash):
 ```
 docker run -p 8282:8282 trups-bridge 
 ```
-- if sucesfull, you will notice green indicator and corresponding log in terminal:
+- if successful, you will notice a green indicator and corresponding log in terminal:
 
 <p align="center">
   <img src="assets/using_docker_8.png" width="60%">
