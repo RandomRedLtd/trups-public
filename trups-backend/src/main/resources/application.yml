@@ -1,0 +1,39 @@
+spring:
+  application:
+    name: trups-backend
+
+  servlet:
+    multipart:
+      max-file-size: ${SPRING_SERVLET_MULTIPART_MAXFILESIZE:200MB}
+      max-request-size: ${SPRING_SERVLET_MULTIPART_MAXFILESIZE:205MB}
+
+  datasource:
+    driverClassName: org.postgresql.Driver
+    url: ${SPRING_DATASOURCE_URL}
+    username: ${SPRING_DATASOURCE_USERNAME}
+    password: ${SPRING_DATASOURCE_PASSWORD}
+
+  liquibase:
+    change-log: classpath:liquibase/master.xml
+    parameters:
+      admin.username: ${SPRING_LIQUIBASE_PARAMETERS_ADMIN_USERNAME}
+      admin.password: ${SPRING_LIQUIBASE_PARAMETERS_ADMIN_PASSWORD}
+
+  quartz:
+    job-store-type: jdbc
+    jdbc:
+      initialize-schema: never
+    properties:
+      org.quartz.jobStore.driverDelegateClass: org.quartz.impl.jdbcjobstore.PostgreSQLDelegate
+      org.quartz.threadPool.class: org.quartz.simpl.SimpleThreadPool
+      org.quartz.jobStore.isClustered: false
+      org.quartz.scheduler.instanceId: AUTO
+      org.quartz.scheduler.idleWaitTime: 10000
+      org.quartz.threadPool.threadCount: ${SPRING_QUARTZ_PROPERTIES_ORG_QUARTZ_THREADPOOL_THREADCOUNT:5}
+
+trups:
+  python-path: ${TRUPS_PYTHONPATH:/usr/bin/python}
+  training-script-path: training.py
+  inference-script-path: inference.py
+  training-job-offset: ${TRUPS_TRAININGJOBOFFSET:60}
+  process-timeout: ${TRUPS_PROCESSTIMEOUT:600}
