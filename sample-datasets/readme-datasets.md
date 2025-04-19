@@ -4,6 +4,8 @@ In `salary.csv` there is one feature:
 The target value (`Target`) is the expected salary.
 
 
+
+
 In `drug200.csv` there are more features. When creating new model, please use as input type:
 - for `Age` -  please use `integer` or `float`
 - `Sex` - please use `enumeration` with values `M,F`
