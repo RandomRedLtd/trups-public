@@ -1,0 +1,21 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+
+    <changeSet id="00000000000000" author="admin">
+        <sqlFile path="/liquibase/sql/00000000000000_create_initial_schema.sql"/>
+    </changeSet>
+
+    <changeSet id="00000000000001" author="admin">
+        <sqlFile path="/liquibase/sql/00000000000001_create_quartz_tables.sql"/>
+    </changeSet>
+
+    <changeSet id="00000000000002" author="admin">
+        <preConditions onFail="MARK_RAN">
+            <sqlCheck expectedResult="t">SELECT '${admin.username}' IS NOT NULL</sqlCheck>
+        </preConditions>
+        <sqlFile path="/liquibase/sql/00000000000002_create_admin_app_user.sql"/>
+    </changeSet>
+
+</databaseChangeLog>

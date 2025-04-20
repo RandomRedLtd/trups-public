@@ -1,0 +1,25 @@
+services:
+
+  postgres:
+    image: postgres:latest
+    network_mode: "host"
+    environment:
+      - POSTGRES_DB=trups
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=pass
+    ports:
+      - "5432:5432"
+
+  trups-backend:
+    image: trups-backend
+    network_mode: "host"
+    restart: on-failure
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://localhost:5432/trups
+      - SPRING_DATASOURCE_USERNAME=postgres
+      - SPRING_DATASOURCE_PASSWORD=pass
+      - SPRING_LIQUIBASE_PARAMETERS_ADMIN_USERNAME=admin
+      - SPRING_LIQUIBASE_PARAMETERS_ADMIN_PASSWORD=admin
+      - TRUPS_PYTHONPATH=/usr/local/bin
+    ports:
+      - "8080:8080"
