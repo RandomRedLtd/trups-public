@@ -107,11 +107,12 @@ Make sure port `8282` is free and run the executable:
 
 ## 3. Start working with TruPS
 
-["3.1 Setup"](#31-setup)
+[3.1 Setup](#31-setup)
 
-["3.2 User Interface"](#32-user-interface)
+[3.2 User Interface](#32-user-interface)
 
-["3.3 Creating a New Model"](#33-creating-a-new-model)
+[3.3 Creating a New Model](#33-creating-a-new-model) <br><br>
+
 
 ### 3.1 Setup
 
