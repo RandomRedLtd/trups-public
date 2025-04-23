@@ -107,7 +107,13 @@ Make sure port `8282` is free and run the executable:
 
 ## 3. Start working with TruPS
 
-### Setup
+["3.1 Setup"](#3.1-setup)
+
+["3.2 User Interface"](#3.1-user-interface)
+
+["3.3 Creating a New Model"](#3.3-creating-a-new-model)
+
+### 3.1 Setup
 
 When first opening TruPS web application (open [TruPS.app](https://trups.app/) webpage in your web browser) you will see a screen to enter your API key ([See "Obtaining an API key"](#1-obtaining-an-api-key)). To start working with TruPS, enter your API key and click `SET API KEY`.
 
@@ -129,7 +135,7 @@ This means that the TruPS bridge software is not running, make sure it is runnin
 
 If this does not help ([Go to "Installing TruPS bridge"](#2-installing-trups-bridge)).
 
-### User interface
+### 3.2 User interface
 
 There are 3 menu items in the user interface: `Models`, `New Model`, and `Settings`.
 
@@ -163,7 +169,7 @@ Finally, if the inference was successful, the result will be displayed:
     <img src="assets/7.png" width="1280">
 </p>
 
-### Creating a new model
+### 3.3 Creating a new model
 
 In general, due to the 60-second inference time limitation during this testing phase, we recommend using datasets with a maximum of 5 features (columns) and 1,000 samples (rows) when creating your models. Sample datasets are available to help you get started.
 
@@ -225,7 +231,7 @@ And the result of this classifier model:
     <img src="assets/12.png" width="1280">
 </p>
 
-### Settings
+### 3.4 Settings
 
 If, for some reason the application starts misbehaving or outright not working, you can try to reset your bridge by navigating to `SETTINGS` and then clicking on the `Clean` button:
 
