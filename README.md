@@ -112,9 +112,7 @@ Make sure port `8282` is free and run the executable:
 [Go to 3.2 User Interface](#32-user-interface)
 
 [Go to 3.3 Creating a New Model](#33-creating-a-new-model)
-
 <br><br>
-
 
 ### 3.1 Setup
 
