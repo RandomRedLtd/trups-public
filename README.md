@@ -172,7 +172,7 @@ Finally, if the inference was successful, the result will be displayed:
 
 ### 3.3 Creating a new model
 
-In general, due to the 60-second inference time limitation during this testing phase, we recommend using datasets with a maximum of 5 features (columns) and 1,000 samples (rows) when creating your models. Sample datasets are available to help you get started.
+In general, due to the 10-minute inference time limitation during this testing phase, we recommend using datasets with a maximum of 5 features (columns) and 1,000 samples (rows) when creating your models. Sample datasets are available to help you get started.
 
 In [sample datasets](./sample-datasets) you will find `salary.csv` and `drug200.csv` sample datasets, and 'readme-datasets.md' if you want to know more about those datasets.
 
